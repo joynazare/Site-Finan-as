@@ -1,17 +1,16 @@
 /*layout
 _____________________________*/
 
-html, body, #home  {
+html, body {
     
     height: 100%;
       }
-      #home {
-        
-      }
+      
 
 
 body {
-    background: url(../imagens/fundo.jpg);
+    background: #ececec;
+    
 
     background-attachment: fixed;
 }
@@ -36,8 +35,15 @@ nav.navbar-tranparente {
 .capa {
     text-align: center;
      padding-top: 15%;
-    
-
 }
-
-
+/*formatar conteudo */
+.caixa1{
+    background: #f3f3f3 ;
+    margin: 10px 0;
+    padding: 5px ; 
+}
+.caixa-conteudo{
+    background: #c4d4e0;
+    padding: 5px;
+    margin-top: 5px;
+}
