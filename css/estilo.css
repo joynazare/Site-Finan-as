@@ -45,5 +45,28 @@ nav.navbar-tranparente {
 .caixa-conteudo{
     background: #c4d4e0;
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.caixa-conteudo2 {
+    background: white;
+
+    
+    
+}
+.imagem {
+    width: 95%;
+    height: 95%;
+
+}
+h5{
+    font-size: 1em;
+    margin: 5px;
+    color: #fff;
+    padding: 5px;
+}
+.caixa-noticia {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
