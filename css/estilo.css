@@ -88,7 +88,6 @@ h4{
 }
 .caixa-noticia-media{
     padding: 15px;
-    
     margin-top: 30px;
     color: white;
 }
@@ -99,6 +98,7 @@ footer{
     position: relative;
     margin-left: 200px; 
     margin-right: 200px;
+    margin-top: 20px;
 }
 .parag-footer{
     font-size: 0.8em;
