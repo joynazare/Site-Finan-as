@@ -1,85 +1,90 @@
-/*layout
-_____________________________*/
-
-html, body {
+html,body, #home{
     
     height: 100%;
-      }
-      
+}
 
-
-body {
+body{
     background: #ececec;
-    
-
-    background-attachment: fixed;
+    background-attachment: fixed;  
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-/*Bara de navegação
-________________________________*/
-nav.navbar-tranparente { 
+nav.navbar-transparente{
     padding: 15px 0px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
+    
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link{
     color: white;
 }
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover{
     color: #9bf0e1;
 }
-.navbar-light .navbar-toggler {
-    color: rgba(255, 255, 255, .5);
-    border-color: rgba(255, 255, 255, 0.5);
+.navbar-light .navbar-toggler{
+    color: rgba(255, 255, 255,.5);
+    border-color: rgba(255, 255, 255,0.5);
 }
-
-.capa {
-    text-align: center;
-     padding-top: 15%;
-}
-/*formatar conteudo */
-.caixa1{
-    background: #f3f3f3 ;
-    margin: 10px 0;
-    padding: 5px ; 
-}
-.caixa-conteudo{
-    background: #c4d4e0;
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 370px;
-}
-.caixa-conteudo2 {
+.divisor{
+    width: 1px;
     background: white;
+    margin: 12px 15px;
+}
 
-    
-    
+.capa{
+    text-align: center;
 }
-.imagem {
-    width: 95%;
-    height: 95%;
-}
-.img {
-    width: 95%;
-    height: 95%;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-.img2 {
-    width: 95%;
-    height: 70%;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-h5{
-    font-size: 1em;
-    margin: 5px;
-    color: #fff;
-    padding: 5px;
-}
-h4{
-    margin: 10px;
+.imagem{
     margin-top: 20px;
+}
+.slider{
+   
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+.btn-roxo{
+    background: #7c25f8;
+}
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+
+#servicos h2, h3 {
+    color: #7c25f8;
+}
+#recursos h2{
+    color: white;
+}
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+.caixa{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
 }
 .caixa-noticia {
     padding: 15px;
@@ -88,20 +93,173 @@ h4{
 }
 .caixa-noticia-media{
     padding: 15px;
-    margin-top: 30px;
+    margin-top: 50px;
     color: white;
+    
+    
+    background-color: black;
+}
+
+#recursos{
+    color: white;
+}
+#servicos{
+    background: white;
+    
+}
+
+
+.rotacionar{
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+    
+}
+section{
+    
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 footer{
     background: #000;
     padding: 50px 0px 20px 0px;
     position: relative;
-    margin-left: 200px; 
-    margin-right: 200px;
-    margin-top: 20px;
+    
 }
-.parag-footer{
+footer h4{
+    color: #919496;
     font-size: 0.8em;
-    margin: 10px;
-
+    text-transform: uppercase;
 }
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float: right;
+    margin: 0 5px;
+}
+
+.album{
+    padding: 10px 0;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h1{
+    font-weight: 900;
+    letter-spacing: -0.05;
+    margin-bottom: 50px;
+    color: white;
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .btn-custom {
+        margin: 10px 15px;
+    }
+    .imagem {
+        width: 300px;
+    }
+    .slider{
+        width: 300px;
+    }
+    section {
+        width: 300px;
+       
+    }
+    
+
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 3em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+    .imagem {
+        width: 500px;
+    }
+    .slider{
+        width: 500px;
+    }
+    section {
+        width: 500px;
+       
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 4em;
+    }
+    .imagem {
+        width: 700px;
+    }
+    .slider{
+        width: 700px;
+    }
+    section {
+        width: 700px;
+        
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 5em;
+    }
+    .imagem {
+        width: 900px;
+    }
+    .slider{
+        width: 900px;
+    }
+
+    section {
+        width: 900px;
+        
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .imagem {
+        width: 1000px;
+    }
+    .slider{
+        width: 1400px;
+    }
+    section {
+        width: 1400px;
+        
+    }
+    h1{
+        font-size: 6em;
+    }
+ }
