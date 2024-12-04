@@ -17,6 +17,17 @@
     <link rel="icon" href="imagens/logo.png">
   </head>
   <body>
+
+  <?php 
+  require 'connexao.php';
+  $query_slides = "select titulo_imagem from tb_imagem";
+  $result_slide = $pdo->prepare($query_slides);
+  $result_slide->execute();
+  $quantidade_slide = $result_slide->rowCount();
+  //var_dump($quantidade_slide);
+
+  
+  ?>
     <header>
       <nav class="navbar navbar-expand-md navbar-light fixed-top 
       navbar-transparente">
@@ -83,6 +94,34 @@
             <div id="carousel-controles" class="carousel slide" data-ride="carousel" >
                         
               <div class="carousel-inner" style="padding-right: 300px;">
+
+
+              <?php 
+              $controle = 0;
+              while ($row_slide = $result_slide->fetch(PDO::FETCH_ASSOC)) {
+                # code...
+                //var_dump($row_slide);
+                extract($row_slide);
+                $ativo = "";
+                if ($controle == 0) {
+                  $ativo = "active";
+                  # code...
+                }
+                echo "<div class='carousel-item $ativo'>";
+                    echo  "<img class='imagem' src='imagens/slides/$titulo_imagem' alt='img-fluid'>";
+                   // echo  "<div class='carousel-caption'>";
+                    //echo     "<h3>Primeiro-Ministro representa São Tomé e Príncipe na Cimeira – EUA/África</h3>" ;
+                     //echo "</div>";
+                 echo "</div>";
+                 $controle ++;
+
+
+
+              }
+              
+              ?>
+
+            <!--
                   <div class="carousel-item active">
                       <img class="imagem" src="imagens/slides/cimeira001.jpg" alt="img-fluid">
                       <div class="carousel-caption">
@@ -106,7 +145,7 @@
                       <div class="carousel-caption">
                           <h3>Primeiro-Ministro representa São Tomé e Príncipe na Cimeira – EUA/África</h3>
                       </div>
-                  </div>
+                  </div>-->
               </div>
 
               <a href="#carousel-controles" class="carousel-control-prev" data-slide="prev">

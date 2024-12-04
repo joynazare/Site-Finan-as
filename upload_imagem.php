@@ -54,7 +54,7 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user'])):?>
     <?php 
     require 'connexao.php';
 
-  
+  /*
     if (isset($_FILES["imagem"]) && !empty($_FILES["imagem"])) {
         $arquivo = $_FILES['imagem']['name'];
         $extensao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));// toda extenção de imagem em minusculo ex: png jpg
@@ -66,9 +66,9 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user'])):?>
        
             $pdo->query ("insert into tb_imagem(id_foto, titulo_imagem, data) values ('','$novo_nome', Now())") ;
          
-    } /*  */ 
+    }   */ 
 
-   /*  
+    
     $msg = false;
     if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"])){
         $arquivo = $_FILES['imagem']['name'];
@@ -81,6 +81,7 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user'])):?>
         move_uploaded_file($_FILES["imagem"]["tmp_name"], $directorio. $novo_nome);
 
         $pdo->query ("insert into tb_imagem(id_foto, titulo_imagem, data) values ('','$novo_nome', Now())")  ;
+      /* 
         $sql = $pdo->prepare($sql);
         $sql->bindValue("id_foto", "");
         $sql->bindValue("totulo_imagem", $novo_nome);
@@ -98,15 +99,15 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user'])):?>
         }
         
 
+*/
 
-
-    }*/ 
+    } 
     ?>
     
     <div class="row ">
         <div class="cold-md-4 ml-5 mt-5">
             <form action="./upload_imagem.php" method="post" enctype="multipart/form-data">
-                <label for="">Selecione a imagem</label>
+                <label for="">Selecione a imagem para slide </label>
                 <input type="file" name="imagem"  class="form-control mb-3">
                 <button type="submit" class="btn btn-success">Enviar imagem</button>
             </form>
