@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/0d6dca1a9b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
     <link rel="stylesheet" href="css/estilo.css">
 
-    <title>musicas para todos - Spotify!</title>
+    <title>Ministério do Planeamento, Finanças e Economia Azul da República Democrática de São Tomé e Príncipe</title>
     <link rel="icon" href="imagens/logo.png">
   </head>
   <body>
@@ -64,7 +65,7 @@
                   <a href="publicações/documentos.html" class="dropdown-item">Documentos</a>
               </div>
               </li>
-              <li class="nav-item divisor"></li>
+              
               <li class="nav-item"><a href="" class="nav-link">CONTACTO</a> </li>
             </ul>
 
@@ -83,19 +84,25 @@
                         
               <div class="carousel-inner" style="padding-right: 300px;">
                   <div class="carousel-item active">
-                      <img class="imagem" src="imagens/cimeira001.jpg" alt="img-fluid">
+                      <img class="imagem" src="imagens/slides/cimeira001.jpg" alt="img-fluid">
                       <div class="carousel-caption">
                           <h3>Primeiro-Ministro representa São Tomé e Príncipe na Cimeira – EUA/África</h3>
                       </div>
                   </div>
                   <div class="carousel-item">
-                      <img class="imagem" src="imagens/cimeira03.jpg" alt="img-fluid">
+                      <img class="imagem" src="imagens/slides/cimeira03.jpg" alt="img-fluid">
                       <div class="carousel-caption">
                           <h3>Primeiro-Ministro representa São Tomé e Príncipe na Cimeira – EUA/África</h3>
                       </div>
                   </div>
                   <div class="carousel-item">
-                      <img class="imagem" src="imagens/cimeira02.jpg" alt="img-fluid">
+                      <img class="imagem" src="imagens/slides/cimeira02.jpg" alt="img-fluid">
+                      <div class="carousel-caption">
+                          <h3>Primeiro-Ministro representa São Tomé e Príncipe na Cimeira – EUA/África</h3>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img class="imagem" src="imagens/slides/governo03.jpg" alt="img-fluid">
                       <div class="carousel-caption">
                           <h3>Primeiro-Ministro representa São Tomé e Príncipe na Cimeira – EUA/África</h3>
                       </div>
@@ -162,7 +169,7 @@
                       <a href="">
                           <h6>MPF - Unité de Coordination du Projet ISP-CAPEM</h6>
                       </a> 
-                      <p>PUBLICATION DE L’ATTRIBUTION DE CONTRAT DE CONSULTANT
+                      <p >PUBLICATION DE L’ATTRIBUTION DE CONTRAT DE CONSULTANT
 
                           DANS LE CADRE DU PROJET D’APPUI INSTITUTIONNEL À L’ADMINSITRATION</p>
                       </div> 
@@ -214,25 +221,31 @@
           </div>
       </div>
       <div class="col-md-3"style="">
-          <h4  style="margin-top: 40px; margin-left: 50px;">LOGIN</h4>
+
+        <form class="form" action="home.php" method="POST">
+        
+          <h4  style="margin-top: 40px; margin-left: 50px; color: black;">LOGIN</h4>
+          <div>
+          <label for="email" style="color: black; margin-left: 50px;">Usuario:</label>
+          <input style="margin-left: 50px;" type="text" name="usuario" id="usuario" placeholder="usuario">
+        </div>
+        <div>
+          <label for="email" style="color: black; margin-left: 50px;">Senha:</label>
+          <input style="margin-left: 50px;" type="password" name="senha" id="senha" placeholder="senha">
+        </div>
+        <div>
+          <button style="margin-left: 50px;" type="submit" >Entrar</button>
+        </div>
+       
           <div style="margin-top: 20px; margin-left: 50px;">
-              <label for="email">Usuario:</label>
-              <input type="text" name="usuario" id="usuario" placeholder="usuario">
-          </div>
-          <div style="margin-top: 20px; margin-left: 50px;">
-              <label for="email">Senha:</label>
-              <input type="password" name="senha" id="senha" placeholder="senha">
-          </div>
-          <div style="margin-top: 20px; margin-left: 50px;">
-              <input class="submit" type="submit" value="Login">
-          </div>
-          <div style="margin-top: 20px; margin-left: 50px;">
+            
               <a href="" > Esquece o usuario </a> <br>
               <a  href="" > Esquece a senha </a>
           </div>
+        </form>
           
 
-          <h4  style="margin-top: 50px; margin-left: 50px;">ANUNCIOS</h4>
+          <h4  style="margin-top: 50px; margin-left: 50px; color: black;">ANUNCIOS</h4>
 
           <div style= "background-color: black; width: 200px; height: 300px; margin-left: 50px; ">
               
@@ -246,7 +259,9 @@
     </div>
   </section>
 
-
+ 
+    
+   
 
 
 
@@ -254,18 +269,18 @@
     <section id="recursos" class="multimidia" style="background-color: white;">
       <div class="container" style="">
         
-          <div class="row">
-            <div class="col-md-12 "  >
+      <div class="row">
+          <div class="col-md-12 "  >
             <div class="caixa-noticia" style="background-color: black;" >
               
                       <h5>MULTIMÉDIA</h5>
                 
-              </div>
+            </div>
           </div>
       </div>
       
-        <div class="row">
-          <div class="col-md-5" style="  margin: 10px; margin-top: 30px; ">
+  <div class="row">
+    <div class="col-md-5" style="  margin: 10px; margin-top: 30px; ">
             <article id="video">
               <iframe width="315" height="250" src="https://www.youtube.com/embed/oVuWJymbYVA"
                title="Discurso do presidente de São Tomé e Príncipe, Carlos Manuel Vila Nova, na Assembleia Geral da ONU" 
@@ -275,8 +290,8 @@
     </div>
   
     <div class="col-md-6" style="  margin: 10px; margin-top: 30px; ">
-             <div class="row">
-              <div class="col-md-3" style="">
+      <div class="row">
+        <div class="col-md-3" style="">
                 <article id="video1">
                         
                   <iframe width="100" height="100" src="https://www.youtube.com/embed/oVuWJymbYVA"
@@ -292,9 +307,9 @@
                   <iframe width="100" height="100" src="https://www.youtube.com/embed/6tAj_1Kvv1k" title="OMS: 99% da população mundial respira ar “tóxico”" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ~
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </article>
-              </div>
-              <div class="col-md-3"  style="  margin: 10px; margin-top: 30px; ">
-                <div>
+        </div>
+          <div class="col-md-3"  style="  margin: 10px; margin-top: 30px; ">
+              <div>
                   <h4 style="width: 300px;">
                      <a href="">Discurso do presidente de São Tomé e Príncipe</a> </h4>
               </div>
@@ -306,8 +321,8 @@
                   <h4 style="width: 300px;">
                      <a href="">OMS: 99% da população mundial respira ar “tóxico”</a> </h4>
               </div>
-              </div>
-             </div>         
+          </div>
+      </div>         
     </div>
 
         </div>
